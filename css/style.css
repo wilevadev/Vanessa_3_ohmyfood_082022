@@ -1,8 +1,85 @@
-h1 {
+* {
+  max-width: 1340px;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*charte graphiques*/
+/*police*/
+/*couleurs*/
+.explore {
+  width: 50%;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #FFF;
+  font-weight: 700;
+  padding-inline: 20px;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  box-shadow: 0 5px 10px #cecece;
+}
+
+.title {
+  box-shadow: 0 4px 2px -2px #cecece;
+  position: relative;
+}
+.title .title__ohmyfood {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   text-align: center;
-  color: #000;
+  color: black;
+}
+
+.research {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.research .research_forms {
+  display: flex;
+  justify-content: center;
+}
+.research .research_texte {
+  border: none;
+  background-color: #EAEAEA;
+  font-size: 16px;
+  color: black;
+  padding-right: 140px;
+}
+.research .research_localisation {
+  text-align: end;
+}
+.research .research_presentation {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-top: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */

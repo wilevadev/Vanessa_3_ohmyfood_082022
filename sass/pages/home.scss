@@ -1,0 +1,37 @@
+.research {
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .research_forms {
+        display: flex;
+        justify-content: center;
+      }
+      .research_texte {
+        border: none;
+        background-color: #EAEAEA;
+        font-size: 16px;
+        color: black;
+        padding-right: 140px;
+      }
+      .research_localisation{
+        text-align: end; 
+      }
+      .research_presentation {
+        background-color: #f6f6f6;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        text-align: center;
+      
+      }
+      
+  }
+h2{
+    font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 25px;
+ margin-top: 45px;  
+}

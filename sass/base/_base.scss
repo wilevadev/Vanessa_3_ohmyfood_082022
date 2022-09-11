@@ -1,6 +1,19 @@
-h1 {
-    font-family: "Shrikhand", cursive;
-    font-size: 30px;
-    text-align: center;
-    color: #000;
+
+* {
+    max-width: 1340px;
+    width: 100%;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    
   }
