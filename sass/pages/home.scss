@@ -4,34 +4,121 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    .research_forms {
+    .research__forms {
         display: flex;
         justify-content: center;
       }
-      .research_texte {
+      .research__texte {
         border: none;
         background-color: #EAEAEA;
         font-size: 16px;
         color: black;
         padding-right: 140px;
       }
-      .research_localisation{
+      .research__localisation{
         text-align: end; 
       }
-      .research_presentation {
-        background-color: #f6f6f6;
-        padding-top: 20px;
-        padding-bottom: 50px;
+   
+  }
+  .page__presentation {
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    .page__title{
+        font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-left: 25px;
+     margin-top: 45px;  
+    }
+    .page__p{
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        margin-bottom: 20px;   
+    }
+  }
+  /*ne sert a rien ..flexbox*/
+  .filter {
+    display: flex;
+    flex-direction: column;
+    .filter__title{
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 28px;
+        margin-top: 52px;
+      }
+    .filter__int {
+  
+        width: 90%;
+        display: flex;
+        border-radius: 30px;
+        font-weight: 700;
+        border: none;
+        box-shadow: #f2f2f2 0 5px 15px;
+        height: 70px;
+        margin-bottom: 20px;
+      }
+      .filter__number {
+        text-align: start;
+        width: 25px;
+        height: 25px;
+       background-color: #9356DC;
+       border-radius: 50%;
+       color:#FFF;
+       }
+       .filter__infos {
+ 
         text-align: center;
+        width: 25%;
+      }
+      .filter__label {
+  
+        text-align: start;
+      }
+  }
+  .card {
+    background-color: #f6f6f6;
+    .card__card{
+        background-color: #fff;
+        border-radius: 25px;
+        width: 90%;
+       
+        padding-bottom: 2px;
       
       }
+      .card__images {
+        height: 180px;
+        border-radius: 25px 25px 0 0;
+        position: relative;
       
+      }
+      .card__transf{
+        display: flex;
+        
+      }
+      /* voir card title et h4 ,h3*/
+      .card__title {
+        color: black;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-top:10px;
+        line-height: 1.5;
+        
+      }
+      
+      .card__heat {
+        color: #000;
+        width: 10%;
+        font-size: 25px;
+      }
+      
+      .card__comment {
+        color: black;
+        padding-left: 20px;
+      
+      }
   }
-h2{
-    font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: 25px;
- margin-top: 45px;  
-}

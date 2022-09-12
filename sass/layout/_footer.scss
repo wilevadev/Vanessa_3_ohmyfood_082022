@@ -1,0 +1,26 @@
+.footer {
+    background-color: #000;
+    .footer__title{
+        color:#FFF;
+        font-size: 20px;
+        font-family:"Shrikhand", cursive; 
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      
+      .footer__li{
+        display: flex;
+      }
+      .footer__i{
+        color: #FFF;
+        width: 3%;
+      }
+      
+      .footer__a{
+        display: flex;
+        color: #FFF;
+        line-height: 1.8;
+        
+      }
+}

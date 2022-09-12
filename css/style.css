@@ -45,6 +45,30 @@ img {
   color: black;
 }
 
+.footer {
+  background-color: #000;
+}
+.footer .footer__title {
+  color: #FFF;
+  font-size: 20px;
+  font-family: "Shrikhand", cursive;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .footer__li {
+  display: flex;
+}
+.footer .footer__i {
+  color: #FFF;
+  width: 3%;
+}
+.footer .footer__a {
+  display: flex;
+  color: #FFF;
+  line-height: 1.8;
+}
+
 .research {
   background-color: #EAEAEA;
   display: flex;
@@ -52,34 +76,113 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.research .research_forms {
+.research .research__forms {
   display: flex;
   justify-content: center;
 }
-.research .research_texte {
+.research .research__texte {
   border: none;
   background-color: #EAEAEA;
   font-size: 16px;
   color: black;
   padding-right: 140px;
 }
-.research .research_localisation {
+.research .research__localisation {
   text-align: end;
 }
-.research .research_presentation {
+
+.page__presentation {
   background-color: #f6f6f6;
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
 }
-
-h2 {
+.page__presentation .page__title {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
   margin-left: 25px;
   margin-top: 45px;
+}
+.page__presentation .page__p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/*ne sert a rien ..flexbox*/
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+.filter .filter__title {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 28px;
+  margin-top: 52px;
+}
+.filter .filter__int {
+  width: 90%;
+  display: flex;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  box-shadow: #f2f2f2 0 5px 15px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.filter .filter__number {
+  text-align: start;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: #FFF;
+}
+.filter .filter__infos {
+  text-align: center;
+  width: 25%;
+}
+.filter .filter__label {
+  text-align: start;
+}
+
+.card {
+  background-color: #f6f6f6;
+  /* voir card title et h4 ,h3*/
+}
+.card .card__card {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 90%;
+  padding-bottom: 2px;
+}
+.card .card__images {
+  height: 180px;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+}
+.card .card__transf {
+  display: flex;
+}
+.card .card__title {
+  color: black;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+.card .card__heat {
+  color: #000;
+  width: 10%;
+  font-size: 25px;
+}
+.card .card__comment {
+  color: black;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
