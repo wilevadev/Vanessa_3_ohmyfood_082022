@@ -134,12 +134,13 @@ button {
   margin-top: 52px;
 }
 .filter__int {
+  background-color: #f6f6f6;
   width: 90%;
   display: flex;
   border-radius: 30px;
   font-weight: 700;
   border: none;
-  box-shadow: #f2f2f2 0 5px 15px;
+  box-shadow: #EAEAEA 0 5px 15px;
   height: 70px;
   margin-bottom: 20px;
 }
@@ -169,13 +170,12 @@ button {
   width: 90%;
   padding-bottom: 2px;
 }
+.card__a {
+  position: relative;
+}
 .card__images {
   height: 180px;
   border-radius: 25px 25px 0 0;
-  position: relative;
-}
-.card__images__new {
-  position: absolute;
 }
 .card__transf {
   display: flex;
@@ -204,13 +204,29 @@ button {
 }
 
 .subtitle {
-  border-radius: 50px;
   display: flex;
-  align-content: space-between;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 100px;
+  padding-top: 30px;
+  bottom: 15px;
+  background-color: #EAEAEA;
+}
+.subtitle .subtitle__title {
+  text-align: center;
+  border: 2px solid;
+}
+.subtitle .card__head {
+  border: 2px solid;
 }
 
 .card__image {
   height: 180px;
+}
+
+.entree__one {
+  background-color: #FFF;
+  border: 2px solide black;
 }
 
 /*# sourceMappingURL=style.css.map */
