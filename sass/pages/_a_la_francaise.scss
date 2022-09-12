@@ -8,30 +8,125 @@
     display: flex;
     justify-content: space-around;
     position: relative;
-    border-radius:100px;
+    border-radius:40px 40px 0 0;
     padding-top: 30px;
-    bottom: 15px;
+    bottom: 50px;
     background-color: $gray;
    
 .subtitle__title{
+    font-family: $font-title;
+    font-size: 18px;
     
-   text-align: center;
-   border: 2px solid ;
+    border: 2px solid ;
 }
-.card__head{
-    border: 2px solid ;  
+.card__heat{
+    border: 2px solid ; 
+    text-align: center; 
 }   
 }
-.card__top{
-   
-}
+
 .card__image{
     height: 180px;
    
     
      
 }
-.entree__one{
-    background-color: $white;
-    border: 2px solide black;
+.entree{
+    width: 95%;
+    &__title{
+        padding-left: 5px;
+        margin-bottom: 25px;
+        margin-top:25px;
+     
+      }
+      &__one{
+        display: flex;
+        justify-content:space-around;
+        background-color: $white;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        
+    }
+    &__two{
+    
+        padding-left: 15px;
+          
+      }
+      &__price{
+    
+        width: 15%;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+}
+.dish{
+    width: 95%;
+    &__titre{
+        padding-left: 5px;
+        margin-bottom: 25px;
+        margin-top:25px;
+      }
+      &__one{
+        display: flex;
+        justify-content:space-around;
+        background-color: $white;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        
+    }
+    &__two{
+    
+        padding-left: 15px;
+          
+      }
+      &__price{
+    
+        width: 15%;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+}
+.dessert{
+    width: 95%;
+    &__titre{
+        padding-left: 5px;
+        margin-bottom: 25px;
+        margin-top:25px;
+      }
+      &__one{
+        display: flex;
+        justify-content:space-around;
+        background-color: $white;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        
+    }
+    &__two{
+    
+        padding-left: 15px;
+          
+      }
+      &__price{
+    
+        width: 15%;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+}
+
+.order{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
