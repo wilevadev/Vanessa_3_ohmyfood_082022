@@ -4,18 +4,18 @@
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    .research__forms {
+    &__forms {
         display: flex;
         justify-content: center;
       }
-      .research__texte {
+      &__texte {
         border: none;
         background-color: #EAEAEA;
         font-size: 16px;
         color: black;
         padding-right: 140px;
       }
-      .research__localisation{
+      &__localisation{
         text-align: end; 
       }
    
@@ -25,7 +25,7 @@
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
-    .page__title{
+    &__title{
         font-size: 20px;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
@@ -33,7 +33,7 @@
       margin-left: 25px;
      margin-top: 45px;  
     }
-    .page__p{
+    &__p{
         font-family: "Roboto", sans-serif;
         font-size: 12px;
         margin-bottom: 20px;   
@@ -43,7 +43,7 @@
   .filter {
     display: flex;
     flex-direction: column;
-    .filter__title{
+    &__title{
         font-size: 20px;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
@@ -51,7 +51,7 @@
         margin-left: 28px;
         margin-top: 52px;
       }
-    .filter__int {
+    &__int {
   
         width: 90%;
         display: flex;
@@ -62,7 +62,7 @@
         height: 70px;
         margin-bottom: 20px;
       }
-      .filter__number {
+      &__number {
         text-align: start;
         width: 25px;
         height: 25px;
@@ -70,19 +70,19 @@
        border-radius: 50%;
        color:#FFF;
        }
-       .filter__infos {
+       &__infos {
  
         text-align: center;
         width: 25%;
       }
-      .filter__label {
+      &__label {
   
         text-align: start;
       }
   }
   .card {
     background-color: #f6f6f6;
-    .card__card{
+    &__card{
         background-color: #fff;
         border-radius: 25px;
         width: 90%;
@@ -90,18 +90,21 @@
         padding-bottom: 2px;
       
       }
-      .card__images {
+      &__images {
         height: 180px;
         border-radius: 25px 25px 0 0;
         position: relative;
-      
+      &__new{
+        position: absolute;
+        
       }
-      .card__transf{
+      }
+      &__transf{
         display: flex;
         
       }
       /* voir card title et h4 ,h3*/
-      .card__title {
+      &__title {
         color: black;
         flex-wrap: wrap;
         padding-left: 20px;
@@ -110,13 +113,13 @@
         
       }
       
-      .card__heat {
+      &__heat {
         color: #000;
         width: 10%;
         font-size: 25px;
       }
       
-      .card__comment {
+      &__comment {
         color: black;
         padding-left: 20px;
       

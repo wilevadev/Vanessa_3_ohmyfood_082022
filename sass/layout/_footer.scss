@@ -1,6 +1,6 @@
 .footer {
     background-color: #000;
-    .footer__title{
+    &__title{
         color:#FFF;
         font-size: 20px;
         font-family:"Shrikhand", cursive; 
@@ -9,15 +9,15 @@
         padding-bottom: 30px;
       }
       
-      .footer__li{
+      &__li{
         display: flex;
       }
-      .footer__i{
+      &__i{
         color: #FFF;
         width: 3%;
       }
       
-      .footer__a{
+      &__a{
         display: flex;
         color: #FFF;
         line-height: 1.8;
