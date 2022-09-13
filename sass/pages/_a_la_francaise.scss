@@ -1,26 +1,30 @@
 .pages{
     background-color: $gray;
-    border-radius: 50px;
-    margin-bottom: 250px;
+   
+   
    
 }
 .subtitle{
-    display: flex;
-    justify-content: space-around;
+
     position: relative;
-    border-radius:40px 40px 0 0;
+    border-radius: 40px 40px 0 0;
     padding-top: 30px;
     bottom: 50px;
     background-color: $gray;
+ &__sub{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+ }   
    
 .subtitle__title{
     font-family: $font-title;
-    font-size: 18px;
+    font-size: 25px;
+    width: 90%;
     
-    border: 2px solid ;
 }
 .card__heat{
-    border: 2px solid ; 
+  
     text-align: center; 
 }   
 }
@@ -31,6 +35,7 @@
     
      
 }
+
 .entree{
     width: 95%;
     &__title{
@@ -40,19 +45,22 @@
      
       }
       &__one{
-        display: flex;
-        justify-content:space-around;
+       
         background-color: $white;
         border-radius: 10px;
         padding-top: 15px;
         padding-bottom: 10px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: $dark-gray 0 5px 10px;
+    }
+    &__titre{
+        width: 98%;
     }
     &__two{
-    
-        padding-left: 15px;
+        width: 98%;
+        display: flex;
+        justify-content: space-around;
           
       }
       &__price{
@@ -71,19 +79,23 @@
         margin-top:25px;
       }
       &__one{
-        display: flex;
-        justify-content:space-around;
+ 
         background-color: $white;
         border-radius: 10px;
         padding-top: 15px;
         padding-bottom: 10px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: $dark-gray 0 5px 10px;
+    }
+    &__title{
+        width: 98%;
     }
     &__two{
+        width: 98%;
     
-        padding-left: 15px;
+        display: flex;
+        justify-content: space-around;
           
       }
       &__price{
@@ -102,19 +114,24 @@
         margin-top:25px;
       }
       &__one{
-        display: flex;
-        justify-content:space-around;
+   
         background-color: $white;
         border-radius: 10px;
         padding-top: 15px;
         padding-bottom: 10px;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: $dark-gray 0 5px 10px;
         
     }
+    &__title{
+        width: 98%;
+    }
     &__two{
+        width: 98%;
     
-        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
           
       }
       &__price{
@@ -127,6 +144,8 @@
 }
 
 .order{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
 }

@@ -56,6 +56,7 @@ button {
 
 .footer {
   background-color: #000;
+  height: 240px;
 }
 .footer__title {
   color: #FFF;
@@ -98,9 +99,12 @@ button {
 }
 .research__localisation {
   text-align: end;
+  padding-right: 40px;
+  width: 95%;
 }
 
 .page__presentation {
+  align-items: center;
   background-color: #f6f6f6;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -110,20 +114,22 @@ button {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-left: 25px;
   margin-top: 45px;
 }
 .page__presentation__p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 /*ne sert a rien ..flexbox*/
 .filter {
-  display: flex;
-  flex-direction: column;
+  width: 90%;
+}
+.filter__all {
+  margin-bottom: 60px;
 }
 .filter__title {
   font-size: 20px;
@@ -133,31 +139,50 @@ button {
   margin-left: 28px;
   margin-top: 52px;
 }
+.filter__ext {
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 .filter__int {
   background-color: #f6f6f6;
-  width: 90%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   font-weight: 700;
   border: none;
   box-shadow: #EAEAEA 0 5px 15px;
   height: 70px;
-  margin-bottom: 20px;
 }
 .filter__number {
-  text-align: start;
+  padding-top: 4px;
+  text-align: center;
   width: 25px;
-  height: 25px;
+  height: 21px;
   background-color: #9356DC;
+  position: absolute;
+  z-index: 1;
   border-radius: 50%;
   color: #FFF;
+  left: 0;
+  right: 90%;
 }
 .filter__infos {
   text-align: center;
-  width: 25%;
+  width: 15%;
 }
 .filter__label {
   text-align: start;
+}
+
+.card__all {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .card {
@@ -167,19 +192,30 @@ button {
 .card__card {
   background-color: #fff;
   border-radius: 25px;
-  width: 90%;
   padding-bottom: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 90%;
 }
-.card__card__card {
+.card__a {
   position: relative;
 }
 .card__images {
   height: 180px;
   border-radius: 25px 25px 0 0;
 }
-.card__images__new {
+.card__new {
+  background-color: #99e2d0;
+  z-index: 1;
   position: absolute;
-  bottom: 50px;
+  text-align: end;
+  padding: 10px;
+  margin: 0 auto;
+  left: 75%;
+  right: 0;
+  top: 10px;
+  color: #008766;
+  width: 62px;
 }
 .card__transf {
   display: flex;
@@ -203,26 +239,26 @@ button {
 
 .pages {
   background-color: #EAEAEA;
-  border-radius: 50px;
-  margin-bottom: 250px;
 }
 
 .subtitle {
-  display: flex;
-  justify-content: space-around;
   position: relative;
   border-radius: 40px 40px 0 0;
   padding-top: 30px;
   bottom: 50px;
   background-color: #EAEAEA;
 }
+.subtitle__sub {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
 .subtitle .subtitle__title {
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  border: 2px solid;
+  font-size: 25px;
+  width: 90%;
 }
 .subtitle .card__heat {
-  border: 2px solid;
   text-align: center;
 }
 
@@ -239,17 +275,21 @@ button {
   margin-top: 25px;
 }
 .entree__one {
-  display: flex;
-  justify-content: space-around;
   background-color: #FFF;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: #cecece 0 5px 10px;
+}
+.entree__titre {
+  width: 98%;
 }
 .entree__two {
-  padding-left: 15px;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
 }
 .entree__price {
   width: 15%;
@@ -266,17 +306,21 @@ button {
   margin-top: 25px;
 }
 .dish__one {
-  display: flex;
-  justify-content: space-around;
   background-color: #FFF;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: #cecece 0 5px 10px;
+}
+.dish__title {
+  width: 98%;
 }
 .dish__two {
-  padding-left: 15px;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
 }
 .dish__price {
   width: 15%;
@@ -293,17 +337,21 @@ button {
   margin-top: 25px;
 }
 .dessert__one {
-  display: flex;
-  justify-content: space-around;
   background-color: #FFF;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: #cecece 0 5px 10px;
+}
+.dessert__title {
+  width: 98%;
 }
 .dessert__two {
-  padding-left: 15px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
 }
 .dessert__price {
   width: 15%;
@@ -312,8 +360,10 @@ button {
 }
 
 .order {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,35 +14,46 @@
         font-size: 16px;
         color: black;
         padding-right: 140px;
+        
+        
       }
       &__localisation{
         text-align: end; 
+        padding-right: 40px;
+        width: 95%;
+        
       }
    
   }
   .page__presentation {
+    align-items: center;
     background-color: #f6f6f6;
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
     &__title{
-        font-size: 20px;
+      font-size: 20px;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       margin-left: 25px;
-     margin-top: 45px;  
+      margin-top: 45px;  
     }
     &__p{
         font-family: "Roboto", sans-serif;
         font-size: 12px;
-        margin-bottom: 20px;   
+        padding-bottom: 50px;   
     }
   }
   /*ne sert a rien ..flexbox*/
-  .filter {
-    display: flex;
-    flex-direction: column;
+ 
+  .filter{
+    width: 90%;
+    &__all{
+      margin-bottom: 60px;
+      
+    }
+   
     &__title{
         font-size: 20px;
         font-family: "Roboto", sans-serif;
@@ -51,62 +62,96 @@
         margin-left: 28px;
         margin-top: 52px;
       }
+      &__ext{
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        
+       
+      }
     &__int {
       background-color: $light-gray;
-  
-        width: 90%;
-        display: flex;
+       display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 30px;
         font-weight: 700;
         border: none;
         box-shadow: $gray 0 5px 15px;
         height: 70px;
-        margin-bottom: 20px;
+        
       }
       &__number {
-        text-align: start;
+        padding-top: 4px;
+        text-align: center;
         width: 25px;
-        height: 25px;
-       background-color: #9356DC;
-       border-radius: 50%;
-       color:#FFF;
+        height: 21px;
+        background-color: #9356DC;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        color: #FFF;
+        left: 0;
+        right: 90%;
+        
+       
+        
+       
+      
        }
        &__infos {
  
         text-align: center;
-        width: 25%;
+        width: 15%;
       }
       &__label {
   
         text-align: start;
       }
   }
-
+.card__all{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:column;
+  padding-bottom: 60px;
+  
+}
   .card {
     background-color: #f6f6f6;
     &__card{
         background-color: #fff;
         border-radius: 25px;
-        width: 90%;
-    
+        
         padding-bottom: 2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 90%;
       }
-    &__card__card {
-      position:relative;
+    &__a{
+      position: relative; 
     }
     
       &__images {
         height: 180px;
         border-radius: 25px 25px 0 0;
+      } 
         
       &__new{
+        background-color: $light-green;
+        z-index: 1;
         position: absolute;
-        bottom: 50px;
-       
-        
-      }
-      }
-      &__transf{
+        text-align: end;
+        padding: 10px;
+        margin: 0 auto;
+        left: 75%;
+        right: 0;
+        top:10px;
+        color: $green;
+        width: 62px;
+    }
+        &__transf{
         display: flex;
         
       }
