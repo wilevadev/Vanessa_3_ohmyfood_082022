@@ -19,16 +19,20 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
 /*charte graphiques*/
 /*police*/
 /*couleurs*/
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-}
-
-button {
-  cursor: pointer;
 }
 
 .explore {
@@ -40,7 +44,7 @@ button {
   border: none;
   border-radius: 50px;
   height: 40px;
-  box-shadow: 0 5px 10px #cecece;
+  box-shadow: 0 5px 10px #7E7E7E;
   transition: transform 50ms;
 }
 
@@ -174,6 +178,10 @@ button {
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  transition: transform 50ms;
+}
+.filter__ext:hover {
+  transform: scale(1.02);
 }
 .filter__int {
   background-color: #f6f6f6;
@@ -186,6 +194,9 @@ button {
   box-shadow: #EAEAEA 0 5px 15px;
   height: 70px;
   position: relative;
+}
+.filter__int:hover {
+  background-color: #9356dc;
 }
 .filter__number {
   padding-top: 4px;
@@ -200,6 +211,7 @@ button {
   left: -11px;
 }
 .filter__infos {
+  color: #7E7E7E;
   text-align: center;
   width: 15%;
 }
@@ -234,6 +246,7 @@ button {
   border-radius: 25px 25px 0 0;
 }
 .card__new {
+  border: 1px;
   background-color: #99e2d0;
   z-index: 1;
   position: absolute;
@@ -311,7 +324,7 @@ button {
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: #cecece 0 5px 10px;
+  box-shadow: #7E7E7E 0 5px 10px;
 }
 .entree__titre {
   width: 98%;
@@ -342,7 +355,7 @@ button {
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: #cecece 0 5px 10px;
+  box-shadow: #7E7E7E 0 5px 10px;
 }
 .dish__title {
   width: 98%;
@@ -373,7 +386,7 @@ button {
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: #cecece 0 5px 10px;
+  box-shadow: #7E7E7E 0 5px 10px;
 }
 .dessert__title {
   width: 98%;
