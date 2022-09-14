@@ -38,9 +38,15 @@ button {
   font-weight: 700;
   padding-inline: 20px;
   border: none;
-  border-radius: 25px;
-  height: 50px;
+  border-radius: 50px;
+  height: 40px;
   box-shadow: 0 5px 10px #cecece;
+  transition: transform 50ms;
+}
+
+.explore:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .title {
@@ -150,7 +156,6 @@ button {
   padding-bottom: 50px;
 }
 
-/*ne sert a rien ..flexbox*/
 .filter__all {
   margin-bottom: 60px;
   width: 90%;
@@ -169,7 +174,6 @@ button {
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
-  position: relative;
 }
 .filter__int {
   background-color: #f6f6f6;
@@ -181,18 +185,19 @@ button {
   border: none;
   box-shadow: #EAEAEA 0 5px 15px;
   height: 70px;
+  position: relative;
 }
 .filter__number {
   padding-top: 4px;
   text-align: center;
-  width: 25px;
-  height: 21px;
+  width: 24px;
+  height: 20px;
   background-color: #9356DC;
   position: absolute;
   z-index: 1;
   border-radius: 50%;
   color: #FFF;
-  right: 98%;
+  left: -11px;
 }
 .filter__infos {
   text-align: center;
@@ -232,14 +237,15 @@ button {
   background-color: #99e2d0;
   z-index: 1;
   position: absolute;
-  text-align: end;
   padding: 10px;
   margin: 0 auto;
-  left: 79%;
+  left: 0;
   right: 0;
   top: 10px;
+  bottom: 0;
   color: #008766;
-  width: 62px;
+  width: 50px;
+  height: 10px;
 }
 .card__transf {
   display: flex;

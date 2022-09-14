@@ -48,7 +48,7 @@
         padding-bottom: 50px;   
     }
   }
-  /*ne sert a rien ..flexbox*/
+ 
  
   .filter{
    
@@ -71,7 +71,7 @@
         align-items: center;
         margin-bottom: 10px;
         margin-top: 10px;
-        position: relative;
+       
        
       }
     &__int {
@@ -84,20 +84,21 @@
         border: none;
         box-shadow: $gray 0 5px 15px;
         height: 70px;
+        position: relative;
         
         
       }
       &__number {
         padding-top: 4px;
         text-align: center;
-        width: 25px;
-        height: 21px;
+        width: 24px;
+        height: 20px;
         background-color: #9356DC;
         position: absolute;
         z-index: 1;
         border-radius: 50%;
         color: #FFF;
-       right: 98%;
+       left:-11px;
         
         
        
@@ -147,14 +148,16 @@
         background-color: $light-green;
         z-index: 1;
         position: absolute;
-        text-align: end;
+       
         padding: 10px;
         margin: 0 auto;
-        left: 79%;
+        left: 0;
         right: 0;
         top:10px;
+        bottom: 0;
         color: $green;
-        width: 62px;
+        width: 50px;
+        height: 10px;
     }
         &__transf{
         display: flex;
