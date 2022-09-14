@@ -79,6 +79,30 @@ button {
   line-height: 1.8;
 }
 
+.chargement {
+  border: 10px solid #9356dc;
+  border-top: 10px solid #99e2d0;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .research {
   background-color: #EAEAEA;
   display: flex;
@@ -104,7 +128,9 @@ button {
 }
 
 .page__presentation {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   background-color: #f6f6f6;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -125,11 +151,9 @@ button {
 }
 
 /*ne sert a rien ..flexbox*/
-.filter {
-  width: 90%;
-}
 .filter__all {
   margin-bottom: 60px;
+  width: 90%;
 }
 .filter__title {
   font-size: 20px;
@@ -145,6 +169,7 @@ button {
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  position: relative;
 }
 .filter__int {
   background-color: #f6f6f6;
@@ -167,8 +192,7 @@ button {
   z-index: 1;
   border-radius: 50%;
   color: #FFF;
-  left: 0;
-  right: 90%;
+  right: 98%;
 }
 .filter__infos {
   text-align: center;
@@ -183,6 +207,7 @@ button {
   justify-content: space-around;
   flex-direction: column;
   padding-bottom: 60px;
+  width: 90%;
 }
 
 .card {
@@ -195,7 +220,6 @@ button {
   padding-bottom: 2px;
   margin-top: 8px;
   margin-bottom: 8px;
-  width: 90%;
 }
 .card__a {
   position: relative;
@@ -211,7 +235,7 @@ button {
   text-align: end;
   padding: 10px;
   margin: 0 auto;
-  left: 75%;
+  left: 79%;
   right: 0;
   top: 10px;
   color: #008766;
