@@ -15,9 +15,7 @@
 </head>
 
 <body>
-    <div class="charge">
-    <div class="chargement"></div>
-</div>  
+    <div class="loader"><span class=loading></span></div>
     <header>
         <div class="title">
             <a href="index.html">
@@ -69,8 +67,9 @@
             </div>
         </section>
         <section class="card">
-            <h3>Restaurants</h3>
+            <h3 class="card__h3">Restaurants</h3>
             <div class="card__all">
+                <div class="card__all1">
                 <div class="card__card">
                     <a class="card__a" href="la_palette_du_gout.html">
                         <span class="card__new">Nouveau</span>
@@ -81,32 +80,34 @@
                                 <h4>La palette du goût </h4>
                                 <p>Menilmontant</p>
                             </div>
-                            <div class="card__heat">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="card__heart0">
+                                <i class="card__heart1 fa-regular fa-heart"> </i>
+                                <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="card__card">
-                    <a class="card__a" href="la-note-enchantée.html">
-
+                    <a class="card__a" href="la_note_enchantée.html">
+                        <span class="card__new">Nouveau</span>
                         <img class="card__images" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                             alt="La note enchantée" />
-                        <span class="card__new">Nouveau</span>
                         <div class="card__transf">
                             <div class="card__title">
                                 <h4>La note enchantée </h4>
                                 <p>Charonne</p>
                             </div>
-                            <div class="card__heat">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="card__heart">
+                                <i class="card__heart1 fa-regular fa-heart"></i>
+                                <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
+            </div>
+            <div class="card__all1">
                 <div class="card__card">
                     <a href="a_la_francaise.html">
-
                         <img class="card__images" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                             alt="À la française" />
                         <div class="card__transf">
@@ -114,15 +115,15 @@
                                 <h4>À la française</h4>
                                 <p>Cité rouge</p>
                             </div>
-                            <div class="card__heat">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="card__heart">
+                                <i class="card__heart1 fa-regular fa-heart"></i>
+                                <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="card__card">
-                    <a href="html/le-delice-des-sens.html">
-
+                    <a href="le_delice_des_sens.html">
                         <img class="card__images"
                             src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                             alt="Le delice des sens" />
@@ -131,11 +132,14 @@
                                 <h4>Le delice des sens</h4>
                                 <p>Folie-méricourt</p>
                             </div>
-                            <div class="card__heat">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="card__heart">
+                                <i class="card__heart1 fa-regular fa-heart"></i>
+                                <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
+
                         </div>
                     </a>
+                </div>
                 </div>
             </div>
         </section>
@@ -148,8 +152,8 @@
 
         <h5 class="footer__title">ohmyfood</h5>
         <ul class="footer__ul">
-            <li class="footer__li"><i class="fa-solid fa-utensils footer__i"></i><a class="footer__a"
-                    href="#">Proposer un restaurant</a></li>
+            <li class="footer__li"><i class="fa-solid fa-utensils footer__i"></i><a class="footer__a" href="#">Proposer
+                    un restaurant</a></li>
             <li class="footer__li"><i class="fa-sharp fa-solid fa-handshake-angle footer__i"></i><a class="footer__a"
                     href="#">Devenir partenaire</a></li>
             <li class="footer__li"><a class="footer__a" href="#">Mentions légales</a></li>

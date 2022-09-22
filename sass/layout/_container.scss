@@ -1,27 +1,2 @@
 
-.chargement{
-  
-    border:10px solid #9356dc;
-    border-top:10px solid #99e2d0;
-    border-bottom:10px solid #ff79da;
-    border-radius: 50%;
-    width :100px;
-    height: 100px;
-    margin:auto;
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom: 0;
-    animation: spin 3s linear infinite;
-    
-   
-  }
-  @keyframes spin {
-      0%{
-        transform: rotate(0deg);
-      }
-      100%{
-        transform: rotate(360deg);
-      }
-  }
+

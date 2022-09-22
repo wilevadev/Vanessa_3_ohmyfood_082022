@@ -1,16 +1,27 @@
+.title__arrow{
+    display: flex;
+    
+}
+.title__back{
+    
+    width:0;
+}
+.fa-arrow-left{
+    color: $black;
+}
 .pages{
-    background-color: $gray;
+    background-color: $light-gray;
    
    
    
 }
 .subtitle{
-
+    
     position: relative;
     border-radius: 40px 40px 0 0;
     padding-top: 30px;
     bottom: 50px;
-    background-color: $gray;
+    background-color: $light-gray;
  &__sub{
     width: 94%;
     display: flex;
@@ -23,11 +34,24 @@
     width: 90%;
     
 }
-.card__heat{
-  
-    text-align: center; 
-}   
 }
+.card__heart0{
+    position: relative;
+    text-align: center;
+    width: 70px;
+    cursor: pointer;
+}
+
+.card__heart0:hover .card__heart2{
+    opacity: 1;
+    color:linear-gradient(to top, $purple, $pink ) ;
+    animation:heart 0.5s;  
+}
+.card__heart0:hover .card__heart1{
+    animation:heartr 0.5s both;
+}
+  
+
 
 .card__image{
     height: 180px;
@@ -35,117 +59,168 @@
     
      
 }
-
-.entree{
-    width: 95%;
-    &__title{
-        padding-left: 5px;
-        margin-bottom: 25px;
-        margin-top:25px;
-     
-      }
-      &__one{
-       
-        background-color: $white;
-        border-radius: 10px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: $dark-gray 0 5px 10px;
-    }
-    &__titre{
-        width: 98%;
-    }
-    &__two{
-        width: 98%;
-        display: flex;
-        justify-content: space-around;
-          
-      }
-      &__price{
-    
-        width: 15%;
-        font-weight: bold;
-        text-align: center;
-    
-    }
-}
 .dish{
     width: 95%;
-    &__titre{
-        padding-left: 5px;
-        margin-bottom: 25px;
-        margin-top:25px;
-      }
-      &__one{
- 
-        background-color: $white;
-        border-radius: 10px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: $dark-gray 0 5px 10px;
-    }
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+  
     &__title{
-        width: 98%;
-    }
-    &__two{
-        width: 98%;
-    
-        display: flex;
-        justify-content: space-around;
-          
-      }
-      &__price{
-    
-        width: 15%;
-        font-weight: bold;
-        text-align: center;
-    
-    }
-}
-.dessert{
-    width: 95%;
-    &__titre{
         padding-left: 5px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         margin-top:25px;
-      }
-      &__one{
-   
-        background-color: $white;
-        border-radius: 10px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: $dark-gray 0 5px 10px;
+    }
+    &__line{
+        background-color: $light-green;
+       
+        height: 3px;
+        width: 45px;
+        margin-left: 5px;
+        margin-bottom: 20px;
         
     }
-    &__title{
-        width: 98%;
-    }
-    &__two{
-        width: 98%;
-    
+
+       &__complete{
         display: flex;
         justify-content: space-between;
-          
-      }
-      &__price{
-    
-        width: 15%;
-        font-weight: bold;
+         background-color: $white;
+         border-radius: 10px;
+         overflow: hidden;
+         cursor: pointer;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         box-shadow: $gray 0 5px 10px;
+         overflow: hidden;
+         text-overflow: ellipsis; 
+         white-space: nowrap; 
+         animation: openpage 1s;
+         animation-fill-mode:both;
+         
+     }
+   
+     &__menu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+         width: 500px;
+         justify-content: flex-start;
+         margin:0;
+         overflow: hidden;
+         text-overflow: ellipsis; 
+         white-space: nowrap;
+        
+            
+       }
+       &__titles{
+         overflow: hidden;
+         text-overflow: ellipsis; 
+         white-space: nowrap;
+         padding-bottom: 10px;
+         
+        
+     } 
+     &__par{
+        
+         overflow: hidden;
+         text-overflow: ellipsis; 
+         white-space: nowrap;
+     }
+       &__price{
+        padding-top: 30px;
+        margin-right: 5px;
+        height: 20px;
+        
+         width: 30px;
+         font-weight: bold;
+         display: flex;
+          align-items: flex-end;}
+        &__animation {
+            margin-right: 0;
+       
+        width: 100px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    } 
+    &__green{
+        display: grid;
+        place-items: center;
+        border-radius: 0 10px 10px 0;
+        height:70px;
+        width:73px;
+        background-color: $light-green;
         text-align: center;
-    
+       
+        margin-right: -74px;
+        transition:all 0.8s
+      
     }
-}
+     }
+     .fa-circle-check{
+        
+        color: $white;
+        font-size: 21px;
+    }
+   
+
+    .dish__complete:hover .dish__green{
+        margin-right: 0px;
+    }
+    .dish__complete:hover .fa-circle-check{
+        animation:check-spin 0.8s ease-in-out;
+    }
+    .trans0{
+        animation-delay:0.15s;
+    } 
+    .trans1{
+        animation-delay: 0.3s;
+    }
+    .trans2{
+        animation-delay: 0.45s;
+    }
+    .trans3{
+        animation-delay: 0.6s;
+    } 
+    .trans4{
+        animation-delay: 0.75s;
+    }
+    .trans5{
+        animation-delay: 0.9s;
+    }
+    .trans6{
+        animation-delay:1.05s;
+    } 
+    .trans7{
+        animation-delay: 1.2s;
+    }
+    .trans8{
+        animation-delay: 1.35s;
+    }
+
+      @keyframes openpage {
+        0%{
+            transform:translatey(15px);
+            opacity:0;
+        }
+        100%{
+            transform:translatey(0)
+        }
+      }
+    
+
 
 .order{
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     align-items: center;
+}
+@media screen and (min-width: 767px){
+  .menus{
+    display: flex;
+}  
+  .dish{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
