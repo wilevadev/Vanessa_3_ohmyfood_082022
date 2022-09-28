@@ -7,61 +7,62 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8bc846d9b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>ohmyfood</title>
 </head>
 
 <body>
-    <div class="loader"><span class=loading></span></div>
-    <header>
+    <div class="loader"><div class="loader__loading"></div></div>
+    <header class="container">
         <div class="title">
             <a href="index.html">
                 <h1 class="title__ohmyfood">ohmyfood</h1>
             </a>
         </div>
     </header>
-    <main>
+    <main class="container">
         <section class="search">
             <div class="research">
                 <form>
-                    <div class="research__forms">
-                        <label class="research__localisation">
-                            <i class="fa-solid fa-location-dot"></i></label>
-                        <input class="research__texte" type="search" name="search" placeholder="paris, Belleville" />
-                    </div>
+                  
+                        <label class="research__localisation" for="ville"><i
+                                class="fa-solid fa-location-dot"></i></label>
+                        <input class="research__texte" type="search" name="search" placeholder="Paris, Belleville" />
+                
                 </form>
             </div>
+      
             <div class="page__presentation">
                 <h2 class="page__title">Reservez le menu qui vous convient</h2>
                 <p class="page__p">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                <button class="explore">Explorez nos restaurants</button>
+                <button class="page__explore">Explorez nos restaurants</button>
             </div>
         </section>
-        <section class="filter">
-            <h3 class="filter__title">Fontionnements</h3>
-            <div class="filter__all">
-                <ul class="filter__ext">
-                    <li class="filter__int">
-                        <span class="filter__number">1</span>
-                        <span class="filter__infos"><i class="fa-solid fa-mobile-screen"></i></span>
-                        <span class="filter__label">Choisissez un restaurant</span>
+        <section class="btn">
+            <h3 class="btn__title">Fontionnements</h3>
+            <div class="btn__all">
+                <ul class="btn__ext">
+                    <li class="btn__int" >
+                        <span class="btn__number">1</span>
+                        <span class="btn__infos"><i class="fa-solid fa-mobile-screen"></i></span>
+                        <span class="btn__label">Choisissez un restaurant</span>
                     </li>
                 </ul>
-                <ul class="filter__ext">
-                    <li class="filter__int">
-                        <span class="filter__number">2</span>
-                        <span class="filter__infos"><i class="fa-solid fa-list-ul"></i></span>
-                        <span class="filter__label">Composez votre menu</span>
+                <ul class="btn__ext">
+                    <li class="btn__int" >
+                        <span class="btn__number">2</span>
+                        <span class="btn__infos"><i class="fa-solid fa-list-ul"></i></span>
+                        <span class="btn__label">Composez votre menu</span>
                     </li>
                 </ul>
-                <ul class="filter__ext">
-                    <li class="filter__int">
-                        <span class="filter__number">3</span>
-                        <span class="filter__infos"><i class="fa-sharp fa-solid fa-store"></i></span>
-                        <span class="filter__label">Degustez au restaurant</span>
+                <ul class="btn__ext">
+                    <li class="btn__int">
+                        <span class="btn__number">3</span>
+                        <span class="btn__infos"><i class="fa-sharp fa-solid fa-store"></i></span>
+                        <span class="btn__label">Degustez au restaurant</span>
                     </li>
                 </ul>
             </div>
@@ -69,7 +70,7 @@
         <section class="card">
             <h3 class="card__h3">Restaurants</h3>
             <div class="card__all">
-                <div class="card__all1">
+                
                 <div class="card__card">
                     <a class="card__a" href="la_palette_du_gout.html">
                         <span class="card__new">Nouveau</span>
@@ -88,7 +89,7 @@
                     </a>
                 </div>
                 <div class="card__card">
-                    <a class="card__a" href="la_note_enchantée.html">
+                    <a class="card__a" href="la_note_enchantee.html">
                         <span class="card__new">Nouveau</span>
                         <img class="card__images" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                             alt="La note enchantée" />
@@ -97,15 +98,14 @@
                                 <h4>La note enchantée </h4>
                                 <p>Charonne</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__heart0">
                                 <i class="card__heart1 fa-regular fa-heart"></i>
                                 <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="card__all1">
+           
                 <div class="card__card">
                     <a href="a_la_francaise.html">
                         <img class="card__images" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -115,7 +115,7 @@
                                 <h4>À la française</h4>
                                 <p>Cité rouge</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__heart0">
                                 <i class="card__heart1 fa-regular fa-heart"></i>
                                 <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
@@ -132,24 +132,22 @@
                                 <h4>Le delice des sens</h4>
                                 <p>Folie-méricourt</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__heart0">
                                 <i class="card__heart1 fa-regular fa-heart"></i>
                                 <i class="card__heart2 fa-solid fa-heart"></i>
                             </div>
 
                         </div>
                     </a>
-                </div>
+               
                 </div>
             </div>
         </section>
 
     </main>
 
-
-    <footer class="footer">
-
-
+<footer class="container">
+<div class="footer">
         <h5 class="footer__title">ohmyfood</h5>
         <ul class="footer__ul">
             <li class="footer__li"><i class="fa-solid fa-utensils footer__i"></i><a class="footer__a" href="#">Proposer
@@ -157,9 +155,9 @@
             <li class="footer__li"><i class="fa-sharp fa-solid fa-handshake-angle footer__i"></i><a class="footer__a"
                     href="#">Devenir partenaire</a></li>
             <li class="footer__li"><a class="footer__a" href="#">Mentions légales</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Contact</a></li>
+            <li class="footer__li"><a class="footer__a" href="mailto:vanessadevetudiante@gmail.com">Contact</a></li>
         </ul>
-
+    </div>
 
     </footer>
 </body>

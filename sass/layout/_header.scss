@@ -1,8 +1,15 @@
 .title {
     box-shadow: 0 4px 2px -2px #cecece;
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
     position: relative;
     height: 65px;
-    .title__ohmyfood{
+    &__arrow{
+        display: flex;
+        align-items: center;
+    }
+&__ohmyfood{
         font-family: $font-title;
         font-size: 30px;
         align-items: center;
@@ -11,6 +18,46 @@
         padding-top: 10px;
       
     }
+  &__back{
+    color: $black;
+    padding-left: 10px;
   }
+  &__back i {
+    color: $black;
+  }
+}
+
+
+
+
+/* loader*/
+.loader{
+    background-color:$white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;  
+    animation: opacity 2s;
+    animation-fill-mode:both;
+    &__loading{
+        display:flex;
+        justify-content: center;
+        position:absolute;
+        background-color: $white;
+        inset:0;
+        margin: auto;
+        z-index: 2;
+        border:10px solid #9356dc;
+        border-top:10px solid #99e2d0;
+        border-bottom:10px solid #ff79da;
+        border-radius: 50%;
+        width :100px;
+        height: 100px;
+        animation: spin 3s linear both infinite ;
+        } 
+ }
 
 

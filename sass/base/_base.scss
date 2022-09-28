@@ -1,23 +1,31 @@
 
-*{
-width: 100%;
-max-width: 100%;
+
+* {box-sizing: border-box;
+  
+  
 }
-  a {
-    text-decoration: none;
-  }
-  li {
-    list-style-type: none;
-  }
-  img {
-    object-fit: cover;
-    width: 100%;
-    display: block;
-    height: auto;
- }
- button {
-  cursor: pointer;
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+button {
+cursor: pointer;
 }
 li{
-  cursor: pointer;
+cursor: pointer;
+}
+.container{
+
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+ 
 }
