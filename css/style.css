@@ -55,6 +55,22 @@
     transform: scale(1);
   }
 }
+@keyframes check-spin {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -165,6 +181,9 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.footer__title:hover {
+  color: #7E7E7E;
+}
 .footer__li {
   display: flex;
   align-items: center;
@@ -177,6 +196,14 @@ body {
   display: flex;
   color: #FFF;
   line-height: 1.8;
+}
+
+.footer__li:hover .footer__i {
+  color: #7E7E7E;
+}
+
+.footer__li:hover .footer__a {
+  color: #7E7E7E;
 }
 
 .research {

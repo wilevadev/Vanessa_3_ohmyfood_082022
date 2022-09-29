@@ -10,11 +10,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  &__title:hover{
+    color:$dark-gray;
+  }
 
   &__li {
     display: flex;
     align-items: center;
   }
+ 
 
   &__i {
     color: #FFF;
@@ -28,4 +32,11 @@
     line-height: 1.8;
 
   }
+
+}
+.footer__li:hover .footer__i{
+  color:$dark-gray;
+}
+.footer__li:hover .footer__a{
+  color:$dark-gray;
 }
