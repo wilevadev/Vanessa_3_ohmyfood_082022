@@ -13,3 +13,19 @@
     flex-direction: column;
     align-items: center;
 }
+@mixin btn ($padding-inline) {
+    max-width: 300px;
+    background: linear-gradient(to top, $purple, $pink);
+    color: $white;
+    font-weight: 400;
+    padding-inline: $padding-inline;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    box-shadow: $shadow;
+    transition: transform 50ms;
+     &:hover{
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+  }

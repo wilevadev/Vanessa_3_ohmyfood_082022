@@ -1,31 +1,34 @@
-
-
-* {box-sizing: border-box;
-  
-  
+* {
+  box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 img {
   object-fit: cover;
   width: 100%;
   display: block;
   height: auto;
 }
+
 button {
-cursor: pointer;
+  cursor: pointer;
 }
-li{
-cursor: pointer;
+
+li {
+  cursor: pointer;
 }
-.container{
+
+.container {
 
   width: 100%;
   margin-right: 0;
   margin-left: 0;
- 
+
 }

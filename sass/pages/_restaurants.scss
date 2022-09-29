@@ -1,185 +1,216 @@
-
-.pages{
-    background-color: $light-gray;
+.pages {
+  background-color: $light-gray;
 }
-.subtitle{
-    position: relative;
-    border-radius: 40px 40px 0 0;
-    padding-top: 30px;
-    bottom: 50px;
-    background-color: $light-gray;
-    &__images{
-        height: 180px;
-    }
- &__sub{
+
+.subtitle {
+  position: relative;
+  border-radius: 40px 40px 0 0;
+  padding-top: 30px;
+  bottom: 50px;
+  background-color: $light-gray;
+
+  &__images {
+    height: 180px;
+  }
+
+  &__sub {
     display: flex;
     justify-content: space-between;
- }   
-   
-&__title{
+  }
+
+  &__title {
     font-family: $font-title;
     font-size: 25px;
     margin-left: 26px;
+  }
 }
-}
 
-.dish{
-   
-    @include hidden();
-    padding-left: 10px;
-    padding-right: 10px;
-   
-    &__title{
-        padding-left: 6px;
-        margin-bottom: 5px;
-        margin-top:25px;
-        text-transform: uppercase;
-    }
-    &__title:after{
-        content: "";
-        margin-top: 6px;
-        display: block;
-        height: 4px;
-        width: 45px;
-        background: #99e2d0;
-    }
-    
+.dish {
 
-       &__complete{
-       
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background-color: $white;
-         border-radius: 10px;
-        
-         cursor: pointer;
-         margin-top: 10px;
-         margin-bottom: 10px;
-         box-shadow: $shadow-gray;
-         @include hidden();
-         animation: openpage 1s;
-         animation-fill-mode:both;
-         
-     }
-   
-     &__menu{
-      
-        padding-left: 10px;
-         width: 100%;
-         justify-content: flex-start;
-         @include hidden();
-         
-        
-            
-       }
-       &__titles{
-      @include hidden();
-         margin-top: 12px;
-         margin-bottom: 10px;
-         
-        
-     } 
-     &__par{
-        font-weight: 300;
-        font-size:smaller;
-         margin-top: 0;
-         margin-bottom: 0;
-         padding-bottom: 9px;
-        @include hidden();
-         
-     }
-       &__price{
-        padding-bottom: 13px;
-        margin-right: 5px;
-        height: 30px;
-      
-         width: 30px;
-         font-weight: bold;
-         display: flex;
-        align-items: flex-end;}
-        &__animation {
-        margin-right: 0;
-       
-        width: 100px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    } 
-    &__green{
-        display: grid;
-        place-items: center;
-        border-radius: 0 10px 10px 0;
-        height:70px;
-        width:73px;
-        background-color: $light-green;
-        text-align: center;
-       
-        margin-right: -74px;
-        transition:all 0.5s ease-in-out;
-      
-    }
-     }
-     .fa-circle-check{
-        
-        color: $white;
-        font-size: 21px;
-    }
-   
+  @include hidden();
+  padding-left: 10px;
+  padding-right: 10px;
 
-    .dish__complete:hover .dish__green{
-        margin-right: 0px;
-    }
-    .dish__complete:hover .fa-circle-check{
-        animation:check-spin 0.5s ease-in-out;
-    }
-    @for $i from 0 through 9{
-        .trans#{$i} {
-            animation-delay: $i  *0.15s;
-        }
+  &__title {
+    padding-left: 6px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
 
-    }
-   
-
-      @keyframes openpage {
-        0%{
-            transform:translatey(15px);
-            opacity:0;
-        }
-        100%{
-            transform:translatey(0)
-        }
-      }
-    
+  &__title:after {
+    content: "";
+    margin-top: 6px;
+    display: block;
+    height: 4px;
+    width: 45px;
+    background: #99e2d0;
+  }
 
 
-.order{
-    padding-top: 50px;
-    padding-bottom: 50px;
+  &__complete {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    &__explore{
-      @include btn (100px)
-    }
+    background-color: $white;
+    border-radius: 10px;
+
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: $shadow-gray;
+    @include hidden();
+    animation: openpage 1s;
+    animation-fill-mode: both;
+
+  }
+
+  &__menu {
+
+    padding-left: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    @include hidden();
+
+
+
+  }
+
+  &__titles {
+    @include hidden();
+    margin-top: 12px;
+    margin-bottom: 10px;
+
+
+  }
+
+  &__par {
+    font-weight: 300;
+    font-size: smaller;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+    @include hidden();
+
+  }
+
+  &__price {
+    padding-bottom: 13px;
+    margin-right: 5px;
+    height: 30px;
+
+    width: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__animation {
+    margin-right: 0;
+
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__green {
+    display: grid;
+    place-items: center;
+    border-radius: 0 10px 10px 0;
+    height: 70px;
+    width: 73px;
+    background-color: $light-green;
+    text-align: center;
+
+    margin-right: -74px;
+    transition: all 0.5s ease-in-out;
+
+  }
 }
 
-@media screen and (min-width: 767px){
-  .subtitle__images{
+.fa-circle-check {
+
+  color: $white;
+  font-size: 21px;
+}
+
+
+.dish__complete:hover .dish__green {
+  margin-right: 0px;
+}
+
+.dish__complete:hover .fa-circle-check {
+  animation: check-spin 0.5s ease-in-out;
+}
+
+@for $i from 0 through 9 {
+  .trans#{$i} {
+    animation-delay: $i *0.15s;
+  }
+
+}
+
+
+@keyframes openpage {
+  0% {
+    transform: translatey(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0)
+  }
+}
+
+
+
+.order {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__explore {
+    @include btn (100px)
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .subtitle__images {
     height: 250px;
   }
-  .menus{
+
+  .menus {
     display: flex;
     justify-content: space-around;
-    flex:1;
-}  
-  .dish{
+    flex: 1;
+  }
+
+  .dish {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 967px){
-  .subtitle__images{
+
+@media screen and (min-width: 967px) {
+  .subtitle__images {
     height: 350px;
   }
+
+  .menus {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+
   }
+
+  .dish {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+  }
+
+}

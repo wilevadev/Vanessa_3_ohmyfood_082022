@@ -1,30 +1,31 @@
 .footer {
   background-color: $footer_gray;
   padding: 28px;
- 
-  &__title{
-      color:#FFF;
-      font-size: 20px;
-      font-family:"Shrikhand", cursive; 
-      
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    
-    &__li{
-      display: flex;
-      align-items: center;
-    }
-    &__i{
-      color: #FFF;
-      width: 25px;
-     
-    }
-    
-    &__a{
-      display: flex;
-      color: #FFF;
-      line-height: 1.8;
-      
-    }
+
+  &__title {
+    color: #FFF;
+    font-size: 20px;
+    font-family: "Shrikhand", cursive;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__li {
+    display: flex;
+    align-items: center;
+  }
+
+  &__i {
+    color: #FFF;
+    width: 25px;
+
+  }
+
+  &__a {
+    display: flex;
+    color: #FFF;
+    line-height: 1.8;
+
+  }
 }
