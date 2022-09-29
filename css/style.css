@@ -637,17 +637,8 @@ body {
   .subtitle__images {
     height: 250px;
   }
-  .menus {
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-  }
-  .dish {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
-@media screen and (min-width: 967px) {
+@media screen and (min-width: 991px) {
   .subtitle__images {
     height: 350px;
   }
@@ -657,9 +648,9 @@ body {
     flex: 1;
   }
   .dish {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30%;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 32%;
   }
 }
 
