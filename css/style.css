@@ -417,7 +417,7 @@ body {
   animation: heart 0.3s both;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   .card__all {
     display: flex;
     flex-direction: row;
