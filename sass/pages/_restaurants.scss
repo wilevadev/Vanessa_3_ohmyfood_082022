@@ -26,7 +26,6 @@
 }
 
 .dish {
-
   @include hidden();
   padding-left: 10px;
   padding-right: 10px;
@@ -49,13 +48,12 @@
 
 
   &__complete {
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $white;
     border-radius: 10px;
-
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -63,26 +61,19 @@
     @include hidden();
     animation: openpage 1s;
     animation-fill-mode: both;
-
   }
 
   &__menu {
-
-    padding-left: 10px;
     width: 100%;
+    padding-left: 10px;
     justify-content: flex-start;
     @include hidden();
-
-
-
   }
 
   &__titles {
     @include hidden();
     margin-top: 12px;
     margin-bottom: 10px;
-
-
   }
 
   &__par {
@@ -92,14 +83,12 @@
     margin-bottom: 0;
     padding-bottom: 9px;
     @include hidden();
-
   }
 
   &__price {
     padding-bottom: 13px;
     margin-right: 5px;
     height: 30px;
-
     width: 30px;
     font-weight: bold;
     display: flex;
@@ -108,7 +97,6 @@
 
   &__animation {
     margin-right: 0;
-
     width: 100px;
     display: flex;
     align-items: flex-end;
@@ -123,19 +111,15 @@
     width: 73px;
     background-color: $light-green;
     text-align: center;
-
     margin-right: -74px;
     transition: all 0.5s ease-in-out;
-
   }
 }
 
 .fa-circle-check {
-
   color: $white;
   font-size: 21px;
 }
-
 
 .dish__complete:hover .dish__green {
   margin-right: 0px;
@@ -149,9 +133,7 @@
   .trans#{$i} {
     animation-delay: $i *0.15s;
   }
-
 }
-
 
 @keyframes openpage {
   0% {
@@ -163,8 +145,6 @@
     transform: translatey(0)
   }
 }
-
-
 
 .order {
   padding-top: 50px;
@@ -182,8 +162,6 @@
   .subtitle__images {
     height: 250px;
   }
-
- 
 }
 
 @media screen and (min-width: 991px) {
@@ -195,7 +173,6 @@
     display: flex;
     justify-content: space-around;
     flex: 1;
-
   }
 
   .dish {
@@ -203,8 +180,4 @@
     padding-right: 3px;
     width: 32%;
   }
-
-
-  
-
 }

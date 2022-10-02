@@ -82,6 +82,7 @@
 
   }
 }
+/*menu*/
 @keyframes check-spin{
   0%{
       transform: rotate(90deg);
@@ -91,11 +92,3 @@
   }
 }
 
-@keyframes appear{
-  0%{
-      transform: scale(0);
-  }
-  100%{
-      transform:scale(1)
-  }
-}
