@@ -556,10 +556,10 @@ body {
   place-items: center;
   border-radius: 0 10px 10px 0;
   height: 70px;
-  width: 73px;
+  width: 70px;
   background-color: #99e2d0;
   text-align: center;
-  margin-right: -74px;
+  margin-right: -70px;
   transition: all 0.5s ease-in-out;
 }
 
